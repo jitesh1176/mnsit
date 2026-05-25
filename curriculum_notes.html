@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curriculum Development & Inclusive Education Notes</title>
+  <style>
+    :root {
+      --bg: #f6f8fc;
+      --panel: #ffffff;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --primary: #1d4ed8;
+      --secondary: #0ea5e9;
+      --accent: #16a34a;
+      --border: #dbe4f0;
+      --warn: #92400e;
+      --warn-bg: #fef3c7;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(120deg, #eef5ff 0%, #f8fbff 40%, #ecfeff 100%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 18px 40px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #1d4ed8 0%, #0f766e 100%);
+      color: #fff;
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 14px 30px rgba(3, 24, 60, 0.2);
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+    }
+
+    .hero p {
+      margin: 6px 0;
+      opacity: 0.95;
+    }
+
+    .toc {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 20px;
+      margin: 0 0 24px;
+    }
+
+    .toc h2 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    .toc ol { margin: 0; padding-left: 20px; }
+
+    .toc a {
+      color: #0b3db8;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .toc a:hover { text-decoration: underline; }
+
+    section {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 18px;
+      box-shadow: 0 5px 16px rgba(30, 64, 175, 0.05);
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-top: 0;
+      font-size: 1.45rem;
+    }
+
+    h3 {
+      color: #155e75;
+      margin-bottom: 8px;
+    }
+
+    ul, ol { margin-top: 8px; }
+
+    .grid {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--secondary);
+      border-radius: 12px;
+      padding: 12px;
+      background: #f8fbff;
+    }
+
+    .mnemonic {
+      border: 1px dashed #0f766e;
+      background: #ecfeff;
+      border-radius: 12px;
+      padding: 10px 12px;
+      margin-top: 12px;
+    }
+
+    .mnemonic strong { color: #0f766e; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 0.96rem;
+    }
+
+    th, td {
+      border: 1px solid #c9d8ee;
+      padding: 10px;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      background: #e8f0ff;
+      color: #0b3db8;
+    }
+
+    .diagram {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px;
+      margin-top: 12px;
+      overflow-x: auto;
+      font-family: "Consolas", "Courier New", monospace;
+      font-size: 0.9rem;
+      color: #111827;
+      white-space: pre;
+    }
+
+    .exam-tip {
+      background: var(--warn-bg);
+      border: 1px solid #f59e0b;
+      color: var(--warn);
+      padding: 10px 12px;
+      border-radius: 12px;
+      margin-top: 12px;
+      font-weight: 600;
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <h1>Curriculum Development & Inclusive Education – Exam Notes</h1>
+      <p>Structured study notes with complete concepts, practical planning points, tables, visual diagrams, and mnemonics.</p>
+      <p><strong>Use this page for:</strong> long answers, short notes, comparison questions, and case-based exam writing.</p>
+    </header>
+
+    <nav class="toc" aria-label="Table of contents">
+      <h2>Table of Contents</h2>
+      <ol>
+        <li><a href="#principles">Principles and Approaches to Curriculum Development</a></li>
+        <li><a href="#group-learning">Curricular Planning for Group Learning with Peer Influence</a></li>
+        <li><a href="#models">Curricular Planning Models: Cooperative Learning, Peer Tutoring, etc.</a></li>
+        <li><a href="#outcomes">Evaluating Curricular Outcomes</a></li>
+        <li><a href="#domains">Curriculum Domains for Pre-Vocational / Secondary Level</a></li>
+        <li><a href="#transition">Planning Transition from School to Work</a></li>
+        <li><a href="#gender">Gender-Specific Management</a></li>
+        <li><a href="#community-resources">Use of Community Resources</a></li>
+        <li><a href="#evaluation">Evaluation of Curriculum</a></li>
+        <li><a href="#community-based">Community-Based Curriculum</a></li>
+        <li><a href="#adaptation">Curriculum Adaptation to Inclusive Settings</a></li>
+        <li><a href="#functional">Functional Academics</a></li>
+      </ol>
+    </nav>
+
+    <section id="principles">
+      <h2>1) Principles and Approaches to Curriculum Development</h2>
+      <p>Curriculum development is a systematic process of selecting, organizing, and evaluating learning experiences to achieve educational goals. It should be dynamic, learner-centered, socially relevant, and inclusive.</p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Core Principles</h3>
+          <ul>
+            <li><strong>Relevance:</strong> curriculum should match learner needs, age, and social demands.</li>
+            <li><strong>Flexibility:</strong> space for adaptation based on pace, ability, and context.</li>
+            <li><strong>Continuity & sequence:</strong> learning progresses from simple to complex.</li>
+            <li><strong>Integration:</strong> academic, vocational, social, and life skills should connect.</li>
+            <li><strong>Balance:</strong> knowledge + skills + attitudes + values.</li>
+            <li><strong>Feasibility:</strong> realistic within time, resources, and teacher capacity.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Main Approaches</h3>
+          <ul>
+            <li><strong>Subject-centered:</strong> content mastery and disciplinary structure.</li>
+            <li><strong>Learner-centered:</strong> interests, readiness, and active participation.</li>
+            <li><strong>Problem-centered:</strong> real-life themes, projects, and social issues.</li>
+            <li><strong>Competency-based:</strong> outcomes defined as measurable competencies.</li>
+            <li><strong>Inclusive approach:</strong> barriers reduced through UDL and accommodations.</li>
+          </ul>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Approach</th>
+            <th>Focus</th>
+            <th>Strength</th>
+            <th>Limitation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Subject-centered</td>
+            <td>Discipline content and syllabus coverage</td>
+            <td>Strong conceptual foundation</td>
+            <td>May ignore learner diversity</td>
+          </tr>
+          <tr>
+            <td>Learner-centered</td>
+            <td>Needs, pace, interests of learner</td>
+            <td>High engagement and motivation</td>
+            <td>Needs careful classroom management</td>
+          </tr>
+          <tr>
+            <td>Competency-based</td>
+            <td>Observable performance outcomes</td>
+            <td>Exam and employability alignment</td>
+            <td>Requires clear rubrics and tracking</td>
+          </tr>
+          <tr>
+            <td>Problem-centered</td>
+            <td>Real-world issues and solutions</td>
+            <td>Critical thinking development</td>
+            <td>Time-intensive planning</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="mnemonic"><strong>Mnemonic – R-F-C-I-B-F:</strong> <em>"Real Friends Create Inclusive Balanced Futures"</em> → Relevance, Flexibility, Continuity, Integration, Balance, Feasibility.</div>
+    </section>
+
+    <section id="group-learning">
+      <h2>2) Curricular Planning for Group Learning with Peer Influence</h2>
+      <p>Group learning must be intentionally planned to use positive peer influence. Peers can model behavior, support understanding, normalize participation, and improve confidence.</p>
+
+      <h3>Planning Steps</h3>
+      <ol>
+        <li>Define academic + social outcomes (content mastery, communication, teamwork).</li>
+        <li>Create mixed-ability groups and assign rotating roles (leader, recorder, presenter, encourager).</li>
+        <li>Design tasks requiring interdependence (every learner contributes a part).</li>
+        <li>Set explicit norms: respect, listening, turn-taking, constructive feedback.</li>
+        <li>Monitor peer influence to prevent dominance, exclusion, or stigma.</li>
+        <li>Use group + individual assessment to ensure accountability.</li>
+      </ol>
+
+      <div class="diagram">Group Learning Flow
+[Common Goal] -> [Role Assignment] -> [Peer Interaction] -> [Shared Product] -> [Reflection + Feedback]
+                         |                    |
+                  [Teacher Facilitation]   [Behavior Support]</div>
+
+      <div class="mnemonic"><strong>Mnemonic – G-R-O-U-P:</strong> <em>Goal, Roles, Output, Understanding checks, Peer reflection.</em></div>
+
+      <div class="exam-tip">Exam Tip: Write both cognitive outcomes (achievement) and socio-emotional outcomes (confidence, inclusion) for full marks.</div>
+    </section>
+
+    <section id="models">
+      <h2>3) Curricular Planning for Models – Cooperative Learning, Peer Tutoring, etc.</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th>How it Works</th>
+            <th>Curricular Use</th>
+            <th>Evaluation Indicator</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cooperative Learning</td>
+            <td>Small groups with shared tasks and individual accountability</td>
+            <td>Concept clarification, projects, discussion units</td>
+            <td>Group product quality + individual quiz scores</td>
+          </tr>
+          <tr>
+            <td>Peer Tutoring</td>
+            <td>Higher-competence learner supports peer under teacher guidance</td>
+            <td>Reading fluency, numeracy drills, revision</td>
+            <td>Improvement in tutee performance and confidence</td>
+          </tr>
+          <tr>
+            <td>Reciprocal Teaching</td>
+            <td>Learners alternate roles: questioner, summarizer, predictor, clarifier</td>
+            <td>Comprehension-heavy subjects</td>
+            <td>Depth of responses and reasoning quality</td>
+          </tr>
+          <tr>
+            <td>Project-Based Learning</td>
+            <td>Longer inquiry around real problem with product/output</td>
+            <td>Integrated curriculum and skill transfer</td>
+            <td>Rubric score + presentation + reflection</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Model Selection Criteria</h3>
+      <ul>
+        <li>Learning objective (knowledge recall vs applied problem-solving).</li>
+        <li>Learner profile (readiness, language level, support needs).</li>
+        <li>Time/resources available and classroom size.</li>
+        <li>Teacher preparedness and monitoring mechanisms.</li>
+      </ul>
+
+      <div class="mnemonic"><strong>Mnemonic – S-M-A-R-T Model Choice:</strong> <em>Suit objective, Match learners, Assess resources, Review roles, Track outcomes.</em></div>
+    </section>
+
+    <section id="outcomes">
+      <h2>4) Evaluating Curricular Outcomes</h2>
+      <p>Outcome evaluation checks whether curriculum objectives are achieved across cognitive, affective, social, and functional domains. It is not only test marks; it also includes behavior, skills, and real-life application.</p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>What to Evaluate</h3>
+          <ul>
+            <li>Achievement of learning outcomes</li>
+            <li>Skill acquisition and performance quality</li>
+            <li>Participation and inclusion</li>
+            <li>Retention and transfer to daily life</li>
+            <li>Long-term readiness for further education/work</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Tools</h3>
+          <ul>
+            <li>Tests and quizzes</li>
+            <li>Observation checklists</li>
+            <li>Portfolios and project rubrics</li>
+            <li>Peer/self-assessment</li>
+            <li>Parent and community feedback</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="diagram">Outcome Evaluation Cycle
+[Expected Outcomes] -> [Evidence Collection] -> [Analysis] -> [Action for Improvement] -> [Re-evaluation]</div>
+
+      <div class="mnemonic"><strong>Mnemonic – E-V-A-L-U-E:</strong> <em>Expect, Verify, Analyze, Link to goals, Upgrade teaching, Evaluate again.</em></div>
+    </section>
+
+    <section id="domains">
+      <h2>5) Curriculum Domains Relevant for Pre-Vocational / Secondary Level</h2>
+      <p>At pre-vocational and secondary stages, curriculum should prepare learners for academic progress, life independence, and employability.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Domain</th>
+            <th>Key Components</th>
+            <th>Expected Outcome</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Academic Domain</td>
+            <td>Language, mathematics, science, social science</td>
+            <td>Foundation knowledge and analytical ability</td>
+          </tr>
+          <tr>
+            <td>Pre-Vocational Domain</td>
+            <td>Tool use, work habits, safety, basic trade exposure</td>
+            <td>Career awareness and work readiness</td>
+          </tr>
+          <tr>
+            <td>Life Skills Domain</td>
+            <td>Communication, self-care, decision-making, time management</td>
+            <td>Independent daily functioning</td>
+          </tr>
+          <tr>
+            <td>Socio-Emotional Domain</td>
+            <td>Self-esteem, empathy, cooperation, stress handling</td>
+            <td>Healthy interpersonal behavior</td>
+          </tr>
+          <tr>
+            <td>Digital & Financial Domain</td>
+            <td>Basic ICT, online safety, budgeting, transaction skills</td>
+            <td>Modern participation and practical literacy</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="mnemonic"><strong>Mnemonic – A-P-L-S-D:</strong> <em>Academics, Pre-vocation, Life skills, Social-emotional, Digital-financial.</em></div>
+    </section>
+
+    <section id="transition">
+      <h2>6) Curriculum Planning for Transition from School to Work</h2>
+      <p>Transition planning is a coordinated process that bridges school learning and adult work life. It should begin early and be individualized.</p>
+
+      <h3>Essential Components</h3>
+      <ul>
+        <li><strong>Assessment:</strong> interest, aptitude, strengths, support needs.</li>
+        <li><strong>Career exposure:</strong> workplace visits, talks, demonstrations.</li>
+        <li><strong>Skill training:</strong> technical, employability, communication, punctuality.</li>
+        <li><strong>Work-based learning:</strong> internships, apprenticeships, supervised tasks.</li>
+        <li><strong>Family-community collaboration:</strong> realistic planning and support network.</li>
+        <li><strong>Follow-up:</strong> post-placement mentoring and problem resolution.</li>
+      </ul>
+
+      <div class="diagram">Transition Roadmap
+Classroom Learning -> Career Awareness -> Skill Practice -> Work Exposure -> Placement -> Follow-up Support</div>
+
+      <div class="mnemonic"><strong>Mnemonic – T-R-A-C-K:</strong> <em>Test strengths, Reveal careers, Apply skills, Connect with workplace, Keep support active.</em></div>
+    </section>
+
+    <section id="gender">
+      <h2>7) Gender-Specific Management</h2>
+      <p>Gender-sensitive curriculum management ensures equal participation, safety, dignity, and opportunity for all genders without reinforcing stereotypes.</p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Instructional Practices</h3>
+          <ul>
+            <li>Use inclusive language and examples.</li>
+            <li>Avoid assigning tasks by stereotype (e.g., boys for tools, girls for decoration).</li>
+            <li>Ensure balanced leadership opportunities in class groups.</li>
+            <li>Integrate gender equity themes in social and life-skill units.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Management Practices</h3>
+          <ul>
+            <li>Safe reporting channels for discrimination/harassment.</li>
+            <li>Regular sensitization for staff and students.</li>
+            <li>Access to hygiene, health, and counseling supports.</li>
+            <li>Data monitoring by participation, retention, and outcomes.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mnemonic"><strong>Mnemonic – R-E-S-P-E-C-T:</strong> <em>Rights, Equality, Safety, Participation, Empathy, Care, Transparency.</em></div>
+    </section>
+
+    <section id="community-resources">
+      <h2>8) Use of Community Resources</h2>
+      <p>Community resources enrich curriculum by connecting school learning to real contexts. They improve relevance, motivation, and practical understanding.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Community Resource</th>
+            <th>Possible Use in Curriculum</th>
+            <th>Learning Benefit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Local professionals/artisans</td>
+            <td>Guest sessions, demonstrations</td>
+            <td>Career awareness, practical insight</td>
+          </tr>
+          <tr>
+            <td>Health centers</td>
+            <td>Health education, hygiene modules</td>
+            <td>Preventive awareness and responsible behavior</td>
+          </tr>
+          <tr>
+            <td>Libraries/community halls</td>
+            <td>Reading programs, exhibitions</td>
+            <td>Language growth and social participation</td>
+          </tr>
+          <tr>
+            <td>Local businesses/farms/workshops</td>
+            <td>Field visits, short practical assignments</td>
+            <td>Work culture understanding</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="diagram">School <--> Family <--> Community Institutions <--> Workplace
+        (Curriculum relevance increases when all partners collaborate)
+      </div>
+
+      <div class="mnemonic"><strong>Mnemonic – L-I-N-K:</strong> <em>Locate resources, Integrate in lessons, Nurture partnerships, Keep feedback loop.</em></div>
+    </section>
+
+    <section id="evaluation">
+      <h2>9) Evaluation of Curriculum</h2>
+      <p>Curriculum evaluation examines the quality, effectiveness, and implementation of the curriculum itself—not just student performance.</p>
+
+      <h3>Dimensions of Evaluation</h3>
+      <ul>
+        <li><strong>Context:</strong> Is curriculum relevant to social and learner needs?</li>
+        <li><strong>Input:</strong> Are resources, teacher capacity, and materials adequate?</li>
+        <li><strong>Process:</strong> Is implementation happening as planned?</li>
+        <li><strong>Product:</strong> Are intended outcomes achieved?</li>
+      </ul>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>When Used</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Formative Evaluation</td>
+            <td>During implementation</td>
+            <td>Improve ongoing delivery and address gaps early</td>
+          </tr>
+          <tr>
+            <td>Summative Evaluation</td>
+            <td>After completion</td>
+            <td>Judge overall effectiveness and policy decisions</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="mnemonic"><strong>Mnemonic – C-I-P-P:</strong> <em>Context, Input, Process, Product.</em></div>
+    </section>
+
+    <section id="community-based">
+      <h2>10) Community-Based Curriculum</h2>
+      <p>A community-based curriculum uses local realities, livelihoods, culture, and needs as the foundation of learning experiences. It supports functional, meaningful, and sustainable education.</p>
+
+      <h3>Key Characteristics</h3>
+      <ul>
+        <li>Local context and indigenous knowledge are respected.</li>
+        <li>Learning tasks solve actual community problems.</li>
+        <li>Learners contribute through service-learning and projects.</li>
+        <li>Schools become active partners in community development.</li>
+      </ul>
+
+      <div class="diagram">Community Needs -> Curriculum Goals -> Learning Activities -> Community Action -> Social Impact</div>
+
+      <div class="mnemonic"><strong>Mnemonic – C-A-R-E:</strong> <em>Contextual, Action-based, Relevant, Empowering.</em></div>
+    </section>
+
+    <section id="adaptation">
+      <h2>11) Curriculum Adaptation to Inclusive Settings</h2>
+      <p>Adaptation means modifying goals, methods, materials, environment, and assessment so that all learners—including children with disabilities or diverse needs—can participate and succeed.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Area</th>
+            <th>Adaptation Example</th>
+            <th>Inclusive Benefit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Content</td>
+            <td>Prioritize essential outcomes; simplify language without diluting concept</td>
+            <td>Accessibility to core learning</td>
+          </tr>
+          <tr>
+            <td>Process</td>
+            <td>Multi-sensory teaching, peer support, task chunking</td>
+            <td>Better engagement and understanding</td>
+          </tr>
+          <tr>
+            <td>Product</td>
+            <td>Alternative responses: oral, visual, project, assistive tech</td>
+            <td>Fair demonstration of competency</td>
+          </tr>
+          <tr>
+            <td>Environment</td>
+            <td>Seating, lighting, visual schedules, reduced distraction</td>
+            <td>Participation and comfort</td>
+          </tr>
+          <tr>
+            <td>Assessment</td>
+            <td>Extra time, adapted questions, criterion-based grading</td>
+            <td>Valid and equitable evaluation</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="mnemonic"><strong>Mnemonic – C-P-P-E-A:</strong> <em>Content, Process, Product, Environment, Assessment.</em></div>
+      <div class="exam-tip">Exam Tip: Mention UDL (multiple means of engagement, representation, expression) for high-value inclusive education answers.</div>
+    </section>
+
+    <section id="functional">
+      <h2>12) Functional Academics</h2>
+      <p>Functional academics are practical applications of academic skills needed in everyday life, community participation, and work settings.</p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Functional Language</h3>
+          <ul>
+            <li>Reading signs, forms, instructions, medicine labels</li>
+            <li>Writing simple applications, messages, and records</li>
+            <li>Speaking for self-advocacy and workplace communication</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Functional Mathematics</h3>
+          <ul>
+            <li>Money handling, budgeting, and basic transactions</li>
+            <li>Time management: reading clocks, schedules, deadlines</li>
+            <li>Measurement for cooking, travel, and vocational tasks</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Why It Matters</h3>
+      <ul>
+        <li>Promotes independence and self-confidence.</li>
+        <li>Reduces dependence in home/community settings.</li>
+        <li>Improves employability and real-life problem solving.</li>
+      </ul>
+
+      <div class="diagram">Academic Skill -> Functional Practice -> Daily Independence -> Better Quality of Life</div>
+      <div class="mnemonic"><strong>Mnemonic – R-E-A-D-Y:</strong> <em>Read, Estimate, Apply, Decide, Yield independence.</em></div>
+    </section>
+
+    <section>
+      <h2>Quick Revision Chart (One-View Summary)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Topic</th>
+            <th>One-Line Recall</th>
+            <th>Mnemonic</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Curriculum Principles</td><td>Design should be relevant, flexible, continuous, integrated, balanced, feasible.</td><td>R-F-C-I-B-F</td></tr>
+          <tr><td>Group Learning</td><td>Peer influence works when goals, roles, and accountability are clear.</td><td>G-R-O-U-P</td></tr>
+          <tr><td>Model Planning</td><td>Choose models based on objective, learner needs, and resources.</td><td>S-M-A-R-T</td></tr>
+          <tr><td>Outcome Evaluation</td><td>Measure knowledge, skills, inclusion, and real-life transfer.</td><td>E-V-A-L-U-E</td></tr>
+          <tr><td>Domain Planning</td><td>Combine academics, vocation, life skills, social-emotional, and digital-financial literacy.</td><td>A-P-L-S-D</td></tr>
+          <tr><td>Transition</td><td>Bridge school to work through assessment, training, exposure, and support.</td><td>T-R-A-C-K</td></tr>
+          <tr><td>Gender Management</td><td>Ensure equity, safety, dignity, and equal participation.</td><td>R-E-S-P-E-C-T</td></tr>
+          <tr><td>Community Resources</td><td>Use local institutions and professionals to make learning practical.</td><td>L-I-N-K</td></tr>
+          <tr><td>Curriculum Evaluation</td><td>Evaluate context, input, process, and product quality.</td><td>C-I-P-P</td></tr>
+          <tr><td>Community-Based Curriculum</td><td>Local needs and action projects increase relevance and empowerment.</td><td>C-A-R-E</td></tr>
+          <tr><td>Inclusive Adaptation</td><td>Adapt content/process/product/environment/assessment for all learners.</td><td>C-P-P-E-A</td></tr>
+          <tr><td>Functional Academics</td><td>Academic skills must support daily living and work readiness.</td><td>R-E-A-D-Y</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <p class="footer">Prepared as organized exam notes for curriculum development and inclusive education study.</p>
+  </div>
+</body>
+</html>
